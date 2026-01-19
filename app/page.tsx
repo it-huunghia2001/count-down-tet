@@ -115,7 +115,7 @@ export default function LuxuryTetCountdown() {
   return (
     <div
       onClick={handleScreenClick}
-      className="min-h-screen bg-[#0f0202] text-slate-200 selection:bg-yellow-500/30 overflow-x-hidden cursor-crosshair relative font-sans"
+      className="min-h-screen bg-[#0f0202] text-slate-200 selection:bg-yellow-500/30 overflow-x-hidden cursor-crosshair relative font-sans py-10!"
     >
       <style jsx global>{`
         @font-face {
@@ -188,7 +188,7 @@ export default function LuxuryTetCountdown() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="mt-16! w-full max-w-2xl bg-white/[0.03] border border-white/10 backdrop-blur-2xl rounded-[2.5rem] p-6 shadow-2xl group relative overflow-hidden"
+          className="mt-16!  w-full max-w-2xl bg-white/[0.03] border border-white/10 backdrop-blur-2xl rounded-[3rem] p-6 shadow-2xl group relative overflow-hidden md:pl-0! md:py-0! py-4! px-10!"
         >
           <div className="flex flex-col md:flex-row items-center gap-6 relative z-10">
             {/* Vinyl Record */}

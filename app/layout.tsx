@@ -17,7 +17,23 @@ const playfair = Playfair_Display({
   weight: ["400", "700", "900"],
 });
 
+// export const metadata: Metadata = {
+//   openGraph: {
+//     title: "Đếm ngược Tết",
+//     description: "Cùng đếm ngược Tết Nguyên Đán 🎉",
+//     images: [
+//       {
+//         url: "/logo-profile.png",
+//         width: 1200,
+//         height: 630,
+//       },
+//     ],
+//   },
+// };
+
 export const metadata: Metadata = {
+  title: "Đếm ngược Tết",
+  description: "Cùng đếm ngược Tết Nguyên Đán 🎉",
   openGraph: {
     title: "Đếm ngược Tết",
     description: "Cùng đếm ngược Tết Nguyên Đán 🎉",
@@ -28,6 +44,10 @@ export const metadata: Metadata = {
         height: 630,
       },
     ],
+  },
+  icons: {
+    icon: "/logo-profile.png",
+    apple: "/logo-profile.png",
   },
 };
 
@@ -48,6 +68,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="vi">
+      <head>
+        <meta />
+      </head>
       <body
         className={`${inter.variable} ${playfair.variable} font-sans antialiased`}
       >
